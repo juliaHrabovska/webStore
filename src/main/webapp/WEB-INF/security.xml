@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<security xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="security.xsd">
+	<rule>
+		<url>/makeOrder</url>
+		<role>1</role>
+	</rule>
+	<rule>
+		<url>/showCart</url>
+		<role>1</role>
+	</rule>
+	<rule>
+		<url>/successOrder</url>
+		<role>1</role>
+	</rule>
+</security>

@@ -1,0 +1,17 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<fmt:setBundle basename="resources"/>
+<c:set var="login" value="${user}"/>
+<c:choose>
+<c:when test="${login != null}">
+    <li><a href="logout"><fmt:message key="LOGOUT"/></a></li>
+    <li><a href="showCart"><fmt:message key="CART"/></a></li>
+</c:when>
+
+<c:when test="${login == null}">
+    <li><a href="login"><fmt:message key="LOGIN"/></a></li>
+    <li><a href="registration"><fmt:message key="REGISTER"/></a></li>
+    <li><a href="showCart"><fmt:message key="CART"/></a></li>
+</c:when>
+</c:choose>
+

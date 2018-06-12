@@ -1,0 +1,14 @@
+# class files
+.class
+
+# iml files
+*.iml
+
+# .idea folder
+/.idea
+
+# out folder
+/out
+
+# target folder
+/target
